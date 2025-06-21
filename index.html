@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Dealership</title>
+
+  <style>
+    body{
+      background-color: black;
+    }
+  
+    .header-container {
+      background-color: black;
+      display: flex;
+      height: 70px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .left-column{
+    
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-left li{
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .hamburger-icon {
+      width: 25px;
+    }
+
+    .center{
+
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 170px;
+    }
+
+    .right-column {
+      display: flex;
+      width: 500px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-right li{
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .icons-container img{
+      width: 20px;
+      margin-right: 3px;
+      margin-right: 3px;
+
+    }
+
+    .icons-container{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <div class="left-column">
+      <img src="hamburger.png" alt="" class="hamburger-icon">
+      <ul class="menu-left">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+      </ul>
+    </div>
+
+
+    <div class="center">
+      <img src="car-dealership-logo.svg" alt="" class="logo">
+    </div>
+
+    <div class="right-column">
+      <ul class="menu-right">
+        <li>Shop</li>
+        <li>Inventory</li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="icons-container">
+        <img src="magnifying-glass.png" alt="">
+        <img src="shopping-bag.png" alt="">
+        <img src="user.png" alt="">
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+/*Styles only available for header*/
+.header-container {
+      background-color: black;
+      display: flex;
+      height: 70px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .left-column{
+    
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-left li{
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .hamburger-icon {
+      width: 25px;
+    }
+
+    .center{
+
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 170px;
+    }
+
+    .right-column {
+      display: flex;
+      width: 500px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-right li{
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .icons-container img{
+      width: 20px;
+      margin-right: 3px;
+      margin-right: 3px;
+
+    }
+
+    .icons-container{
+      margin-left: 50px;
+      margin-right: 50px;
+    }

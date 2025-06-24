@@ -6,216 +6,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/general.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+
+
   <title>Car Dealership</title>
-
-  <style>
-    p, li, span {
-      font-family: "Open Sans";
-    }
-    h1 {
-      font-family: Michroma;
-    }
-
-
-    body{
-      background-color: black;
-    }
-  
-    .header-container {
-      background-color: black;
-      display: flex;
-      height: 70px;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-    }
-
-    .left-column{
-    
-      width: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .menu-left li{
-      display: inline-block;
-      margin-left: 5px;
-      margin-right: 5px;
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-
-    .hamburger-icon {
-      width: 25px;
-    }
-
-    .center{
-
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .logo {
-      width: 170px;
-    }
-
-    .right-column {
-      display: flex;
-      width: 500px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .menu-right li{
-      display: inline-block;
-      margin-left: 5px;
-      margin-right: 5px;
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-
-    .icons-container img{
-      width: 20px;
-      margin-right: 3px;
-      margin-right: 3px;
-
-    }
-
-    .icons-container{
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      color: white;
-    }
-
-    .hero-top {
-      background-color: lightblue;
-      height: 600px;
-      background-image: url("cls-bg.png");
-      background-size: cover;
-      background-position: center;
-      margin-top: 70px;
-      position: relative;
-    }
-
-
-    .hero-bottom {
-
-      padding-bottom: 1000px;
-    }
-
-    .year-options-container {
-      padding-left: 10px;
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: 0;
-      width:120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .year-options-container li {
-      margin-left: 13px;
-      margin-right: 13px;
-    }
-
-    .year-options-container .year-selector{
-      transform: rotate(90deg);
-    }
-
-    .year-selector{
-      display: flex;
-      list-style: none;
-      font-size: 18px;
-      font-weight: 600;
-      font-family: Michroma;
-      color: gray;
-    }
-
-    .year-selector li {
-     cursor: pointer;
-     transition: 0.2s;
-    }
-
-    .year-selector li:hover {
-      color: white;
-    }
-
-     .year-selector li:active {
-      color: white;
-    }
-
-    .bottom-header {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 70px;
-      border-top: 2px solid gray ;
-      border-bottom: 2px solid gray ;
-    }
-
-    .bottom-header ul {
-      display: flex;
-
-    }
-
-    .bottom-header li{
-      list-style: none;
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-    .bottom-header-left{
-      flex: 1;
-      display: flex;
-      align-items: center;
-    }
-
-    .bottom-header-right {
-      width: 300px;
-      border-left: 2px solid gray;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .bottom-header-right {
-      font-family: Michroma;
-      font-size: 16px;
-    }
-
-    .bottom-header-right span {
-           font-family: Michroma;
-      font-size: 40px;
-      margin-left: 15px;
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 <body>
 
   <!--Header-->
   <div class="header-container">
     <div class="left-column">
-      <img src="hamburger.png" alt="" class="hamburger-icon">
+      <img src="assets/img/hamburger.png" alt="" class="hamburger-icon">
       <ul class="menu-left">
         <li>Home</li>
         <li>About Us</li>
@@ -226,7 +33,7 @@
   
 
     <div class="center">
-      <img src="car-dealership-logo.svg" alt="" class="logo">
+      <img src="assets/img/car-dealership-logo.svg" alt="" class="logo">
     </div>
 
     <div class="right-column">
@@ -237,9 +44,9 @@
       </ul>
 
       <div class="icons-container">
-        <img src="magnifying-glass.png" alt="">
-        <img src="shopping-bag.png" alt="">
-        <img src="user.png" alt="">
+        <img src="assets/img/magnifying-glass.png" alt="">
+        <img src="assets/img/shopping-bag.png" alt="">
+        <img src="assets/img/user.png" alt="">
       </div>
     </div>
 

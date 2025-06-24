@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <title>Car Dealership</title>
 
   <style>
+    p, li, span {
+      font-family: "Open Sans";
+    }
+    h1 {
+      font-family: Michroma;
+    }
+
+
     body{
       background-color: black;
     }
@@ -16,6 +31,10 @@
       height: 70px;
       color: white;
       font-family: Arial, Helvetica, sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
     }
 
     .left-column{
@@ -76,9 +95,124 @@
       margin-left: 50px;
       margin-right: 50px;
     }
+
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    .hero-top {
+      background-color: lightblue;
+      height: 600px;
+      background-image: url("cls-bg.png");
+      background-size: cover;
+      background-position: center;
+      margin-top: 70px;
+      position: relative;
+    }
+
+
+    .hero-bottom {
+
+      padding-bottom: 1000px;
+    }
+
+    .year-options-container {
+      padding-left: 10px;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0;
+      width:120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .year-options-container li {
+      margin-left: 13px;
+      margin-right: 13px;
+    }
+
+    .year-options-container .year-selector{
+      transform: rotate(90deg);
+    }
+
+    .year-selector{
+      display: flex;
+      list-style: none;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: Michroma;
+      color: gray;
+    }
+
+    .year-selector li {
+     cursor: pointer;
+     transition: 0.2s;
+    }
+
+    .year-selector li:hover {
+      color: white;
+    }
+
+     .year-selector li:active {
+      color: white;
+    }
+
+    .bottom-header {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      border-top: 2px solid gray ;
+      border-bottom: 2px solid gray ;
+    }
+
+    .bottom-header ul {
+      display: flex;
+
+    }
+
+    .bottom-header li{
+      list-style: none;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .bottom-header-left{
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .bottom-header-right {
+      width: 300px;
+      border-left: 2px solid gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-header-right {
+      font-family: Michroma;
+      font-size: 16px;
+    }
+
+    .bottom-header-right span {
+           font-family: Michroma;
+      font-size: 40px;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
+
+  <!--Header-->
   <div class="header-container">
     <div class="left-column">
       <img src="hamburger.png" alt="" class="hamburger-icon">
@@ -110,6 +244,52 @@
     </div>
 
   </div>
+    <!--Header End-->
+
+
+  <div class="hero" id="hero">
+
+    <!----------Hero Top------------->
+    <div class="hero-top">
+      <h1 style="text-align: center; margin-top: 20px;">FIND YOUR PERFECT CAR</h1>
+      <div class="year-options-container">
+        <div>
+            <ul class="year-selector">
+          <li>2017</li>
+          <li>2018</li>
+          <li>2019</li>
+          <li>2020</li>
+        </ul>
+        </div>
+      </div>
+
+ <div class="bottom-header">
+          <div class="bottom-header-left">
+            <ul>
+            <li>OVERVIEW</li>
+            <li>GALLERY</li>
+            <li>FULL SPEC</li>
+            <li>COMPARE</li>
+          </ul>
+          </div>
+
+          <div class="bottom-header-right">
+           SUBMIT YOUR CAR <span>+</span>
+          </div>
+        </div>
+
+
+
+    </div>
+<!---------Hero Top END------------->
+
+
+    <div class="hero-bottom">
+      FORM
+    </div>
+
+  </div>
   
+
 </body>
 </html>

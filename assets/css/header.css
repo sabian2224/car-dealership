@@ -30,8 +30,10 @@
 
     .hamburger-icon {
       width: 25px;
+      cursor: pointer;
     }
 
+    
     .center{
 
       flex: 1;

@@ -5,9 +5,20 @@
       font-family: Michroma;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
 
     #body-element{
       background-color: black;
       padding-bottom: 1000px;
       margin: 0px !important;
+    }
+
+
+    #cars-grid {
+      width: 100%;
+      height: 100vh;
+      background-color: lightblue;
     }

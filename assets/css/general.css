@@ -6,6 +6,8 @@
     }
 
 
-    body{
+    #body-element{
       background-color: black;
+      padding-bottom: 1000px;
+      margin: 0px !important;
     }

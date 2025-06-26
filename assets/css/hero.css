@@ -4,22 +4,17 @@
       flex-direction: column;
       color: white;
     }
+    
 
     .hero-top {
-    
-      height: 600px;
-      background-image: url("../img/cls-bg.png");
+      height: 85vh;
+      background-image: url("../img/cls-2016.png");
       background-size: cover;
       background-position: center;
       margin-top: 70px;
       position: relative;
     }
 
-
-    .hero-bottom {
-
-      padding-bottom: 1000px;
-    }
 
     .year-options-container {
       padding-left: 10px;
@@ -120,4 +115,41 @@
       font-size: 40px;
       margin-left: 15px;
       margin-bottom: 10px;
+    }
+
+
+
+    /*Hero Bottom*/
+    .hero-bottom {
+      background-image: url("../img/cls-wheel.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 30vh;
+    }
+    .hero-bottom .inner-container { 
+      background-color: rgba(0, 0, 0, 0.494);
+      width: 100%;
+      height: 100%;
+            font-family: Open Sans;
+
+
+    }
+    .sub-inner-container {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+    }
+
+    .arrow-down {
+      width: 20px;
+      margin-left: 15px;
+    }
+
+    .form-card{
+      padding: 10px;
+    }
+
+    .find-cars-form {
+      background-color: #1a191c;
+      padding: 10px;
     }

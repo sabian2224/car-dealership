@@ -22,3 +22,27 @@
       height: 100vh;
       background-color: lightblue;
     }
+
+
+/* Medium devices (Mobile) */
+@media only screen and (max-width: 768px) {
+  .menu-left{ 
+    display: none;
+  }
+
+  .menu-right {
+    display: none;
+  }
+
+  .icons-container {
+    display: none;
+  }
+
+  .year-options-container .year-selector{
+    display: none;
+  }
+
+  .bottom-header{
+    display: none !important;
+  }
+}

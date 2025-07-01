@@ -13,8 +13,11 @@
       background-position: center;
       margin-top: 70px;
       position: relative;
+       transition: opacity 0.5s ease-in-out;
+  opacity: 1;
     }
 
+  
 
     .year-options-container {
       padding-left: 10px;
